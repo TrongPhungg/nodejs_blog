@@ -1,2 +1,10 @@
 h1 {
   color: red; }
+
+h2 {
+  color: green; }
+
+.checkbox-select {
+  width: 160px;
+  height: 30px;
+  margin: 0 16px 0 16px; }
