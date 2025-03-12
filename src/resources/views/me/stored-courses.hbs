@@ -29,9 +29,16 @@
       <tr>
          <th></th>
         <th scope="col">#</th>
-        <th scope="col">Tên khoá học</th>
-        <th scope="col">Trình độ</th>
-        <th scope="col">Thời gian tạo</th>
+        <th scope="col">Tên khoá học
+          {{{sortable 'name' _sort}}}
+          </a>
+        </th>
+        <th scope="col">Trình độ
+          {{{sortable 'level' _sort}}}
+        </th>
+        <th scope="col">Thời gian tạo
+          {{{sortable 'createdAt' _sort}}}
+        </th>
         <th></th>
        
       </tr>
@@ -67,6 +74,7 @@
           <td colspan="5" class="text-center">
             Bạn chưa đăng khoá học nào.
             <a href="/courses/create">Đăng khoá học</a>
+            
           </td>
         </tr>
       {{/each}}
